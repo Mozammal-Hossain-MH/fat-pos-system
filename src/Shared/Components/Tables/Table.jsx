@@ -25,25 +25,6 @@ export default function Table({
   dataAuto, //its for test purpose
   specialClasses = [], //special class for table row
 }) {
-  // <Table
-  //   selectedIds={selectedIds}
-  //   setSelectedIds={setSelectedIds}
-  //   itemsPerPage={filters?.perPage}
-  //   totalItems={data?.total}
-  //   setPageNo={(data) => setFilters({ ...filters, page: data })}
-  //   setPerPage={setPerPage}
-  //   perPage={filters?.perPage}
-  //   isLoading={isPending}
-  //   rows={data?.data?.map((d) => ({
-  //     ...d,
-  //     name: d?.name,
-  //   }))}
-  //   actions={actions}
-  //   isFullActionList={true}
-  //   cols={cols}
-  //   dataAuto="all-announcements"
-  // />
-
   const [allChecked, setAllChecked] = useState(false);
   const permissions = localStorage.getItem("permissions");
 
